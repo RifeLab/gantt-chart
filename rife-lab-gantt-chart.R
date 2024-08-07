@@ -25,7 +25,7 @@ gantt.df.initiate <- data.frame(labels=character(),
 gantt.df <- gantt.df.initiate %>%
   add_row(labels="Trevor Rife",starts="2022/06/01",ends=present,priorities=1) %>%
   add_row(labels="Chaney Courtney",starts="2022/06/01",ends=present,priorities=2) %>% 
-  add_row(labels="Mason McNair",starts="2022/10/01",ends=present,priorities=3) %>% 
+  add_row(labels="Mason McNair",starts="2022/10/01",ends="2024/08/02",priorities=3) %>% 
   add_row(labels="Bryan Ellerbrock",starts="2023/02/01",ends=present,priorities=2) %>% 
   add_row(labels="Adrianna Guzman",starts="2023/06/01",ends="2023/08/15",priorities=6) %>% 
   add_row(labels="Walker Spivey",starts="2023/08/01",ends=present,priorities=4) %>% 
