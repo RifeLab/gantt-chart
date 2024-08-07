@@ -41,23 +41,22 @@ gantt.info <- list(labels=gantt.df$labels,
 #Assign values for the set up of your Gantt Chart
 
 years <- seq(as.Date("2022/06/01", "%Y/%m/%d"), by="year", length.out=35)
-yearsLab <- format(years, format="%Y")
+yearsLab <- format(years, format="%Y %b")
 
 vgridpos<-as.POSIXct(years,format=Ymd.format)
 vgridlab<-yearsLab
 
 colfunc <- colorRampPalette(c("#762a83","#af8dc3","#e7d4e8","#1b7837","#7fbf7b","#d9f0d3"))
-timeframe <- as.POSIXct(c("2022/06/01",present),format=Ymd.format)
+timeframe <- as.POSIXct(c("2022/05/31",present),format=Ymd.format)
 
 #Plot and save your Gantt chart into PDF form
+
+png("rifelab-gantt.png", width=300, height=300/1.5, units="mm", res=300,pointsize = 14)
 
 gantt.chart(gantt.info, taskcolors=colfunc(6),xlim=timeframe, main="Rife Lab (est. 2022)", priority.legend=FALSE, 
             vgridpos=vgridpos,vgridlab=vgridlab,hgrid=FALSE,half.height=0.45,cylindrical=FALSE,border.col="black",
             label.cex=0.8,priority.label="Type",priority.extremes=c("PI","Undergrad"),time.axis=1)
-            
-#add a legend
+
 legend("bottomleft",c("PI","Staff Scientist","Postdoc","PhD","MSc","Undergrad"),fill = colfunc(6),inset = .1)
 
-#output
-dev.copy(file="rife-gantt.pdf",pdf, width = 14, height = 10, paper = "special")
 dev.off()
