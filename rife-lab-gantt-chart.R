@@ -30,7 +30,9 @@ gantt.df <- gantt.df.initiate %>%
   add_row(labels="Adrianna Guzman",starts="2023/06/01",ends="2023/08/15",priorities=6) %>% 
   add_row(labels="Walker Spivey",starts="2023/08/01",ends=present,priorities=4) %>% 
   add_row(labels="Siddharth Malladi",starts="2023/08/01",ends="2024/05/01",priorities=5) %>% 
-  add_row(labels="Prasad Kamath",starts="2024/06/17",ends=present,priorities=2)
+  add_row(labels="Prasad Kamath",starts="2024/06/17",ends=present,priorities=2) %>% 
+  add_row(labels="McKena Wilson",starts="2024/09/16",ends=present,priorities=3) %>% 
+  add_row(labels="Blake Wilson",starts="2024/09/16",ends=present,priorities=2)
 
 
 gantt.info <- list(labels=gantt.df$labels,
