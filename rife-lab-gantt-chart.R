@@ -26,13 +26,16 @@ gantt.df <- gantt.df.initiate %>%
   add_row(labels="Trevor Rife",starts="2022/06/01",ends=present,priorities=1) %>%
   add_row(labels="Chaney Courtney",starts="2022/06/01",ends=present,priorities=2) %>% 
   add_row(labels="Mason McNair",starts="2022/10/01",ends="2024/08/02",priorities=3) %>% 
-  add_row(labels="Bryan Ellerbrock",starts="2023/02/01",ends=present,priorities=2) %>% 
+  add_row(labels="Bryan Ellerbrock",starts="2023/02/01",ends="2025/06/13",priorities=2) %>% 
   add_row(labels="Adrianna Guzman",starts="2023/06/01",ends="2023/08/15",priorities=6) %>% 
   add_row(labels="Walker Spivey",starts="2023/08/01",ends=present,priorities=4) %>% 
   add_row(labels="Siddharth Malladi",starts="2023/08/01",ends="2024/05/01",priorities=5) %>% 
   add_row(labels="Prasad Kamath",starts="2024/06/17",ends=present,priorities=2) %>% 
   add_row(labels="McKena Wilson",starts="2024/09/16",ends=present,priorities=3) %>% 
-  add_row(labels="Blake Wilson",starts="2024/09/16",ends=present,priorities=2)
+  add_row(labels="Blake Wilson",starts="2024/09/16",ends=present,priorities=2) %>% 
+  add_row(labels="Landen Lloyd",starts="2025/06/09",ends=present,priorities=6) %>% 
+  add_row(labels="Reagan Mitton",starts="2025/06/09",ends=present,priorities=6) %>% 
+  add_row(labels="Rufus Brown",starts="2025/06/09",ends=present,priorities=6)
 
 
 gantt.info <- list(labels=gantt.df$labels,
@@ -59,6 +62,6 @@ gantt.chart(gantt.info, taskcolors=colfunc(6),xlim=timeframe, main="Rife Lab (es
             vgridpos=vgridpos,vgridlab=vgridlab,hgrid=FALSE,half.height=0.45,cylindrical=FALSE,border.col="black",
             label.cex=0.8,priority.label="Type",priority.extremes=c("PI","Undergrad"),time.axis=1)
 
-legend("bottomleft",c("PI","Staff Scientist","Postdoc","PhD","MSc","Undergrad"),fill = colfunc(6),inset = .1)
+legend("bottomleft",c("PI","Staff Scientist","Postdoc","PhD","MSc","Undergrad/HS"),fill = colfunc(6),inset = .1)
 
 dev.off()
