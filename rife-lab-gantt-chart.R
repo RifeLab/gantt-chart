@@ -33,9 +33,9 @@ gantt.df <- gantt.df.initiate %>%
   add_row(labels="Prasad Kamath",starts="2024/06/17",ends=present,priorities=2) %>% 
   add_row(labels="McKena Wilson",starts="2024/09/16",ends=present,priorities=3) %>% 
   add_row(labels="Blake Wilson",starts="2024/09/16",ends=present,priorities=2) %>% 
-  add_row(labels="Landen Lloyd",starts="2025/06/09",ends=present,priorities=6) %>% 
-  add_row(labels="Reagan Mitton",starts="2025/06/09",ends=present,priorities=6) %>% 
-  add_row(labels="Rufus Brown",starts="2025/06/09",ends=present,priorities=6) %>% 
+  add_row(labels="Landen Lloyd",starts="2025/06/09",ends="2025/07/18",priorities=6) %>% 
+  add_row(labels="Reagan Mitton",starts="2025/06/09",ends="2025/07/18",priorities=6) %>% 
+  add_row(labels="Rufus Brown",starts="2025/06/09",ends="2025/07/18",priorities=6) %>% 
   add_row(labels="Veronda Blue",starts="2025/06/30",ends=present,priorities=4)
 
 
